@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+
+    <script
+      src="https://kit.fontawesome.com/aed3a2d5c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--encabezado-->
+    <header id="header">
+      <div>
+        <a href="../index.html"><img src="../img/botinesfs.png" alt="logo" /></a>
+      </div>
+      <label for="menu">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="menu" class="inputMenu" />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li class="categorys-li">
+            Categorias
+            <ul>
+              <li><a href="./botines.html">Botines</a></li>
+              <li><a href="./indumentaria.html">Indumentaria</a></li>
+              <li><a href="./accesorios.html">Accesorios</a></li>
+            </ul>
+          </li>
+          <li class="hidden"><a href="./botines.html">Botines</a></li>
+          <li class="hidden"><a href="./indumentaria.html">Indumentaria</a></li>
+          <li class="hidden"><a href="./accesorios.html">Accesorios</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./productos.html">Todos Los Productos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--contenido principal-->
+    <main class="contacto-main">
+
+      <!--formulario-->
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Contacto</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <br />
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+          <br />
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            cols="40"
+            required
+          ></textarea>
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </main>
+
+    <!--pie de pagina-->
+
+    <footer>
+      <div class="grupo-1">
+        <h2>Siguenos</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+      </div>
+
+      <div class="grupo-2">
+        <small>&copy;BotinesFS 2023 - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
+  </body>
+</html>

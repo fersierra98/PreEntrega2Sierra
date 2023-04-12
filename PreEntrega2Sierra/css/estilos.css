@@ -1,0 +1,481 @@
+/*importar fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'roboto-condensed', cursive;
+
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: #1c1c1c;
+}
+
+header div {
+    display: flex;
+    width: 60px;
+}
+
+header div img{
+    width: 100%;
+    border-radius: 50%;
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header label{
+    display: none;
+}
+header .inputMenu{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+
+header nav ul li {
+    display: flex;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-align: center;
+    width: max-content;
+}
+
+header nav ul li:hover{
+    display: block;
+    background-color: #555556;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*submenu*/
+header nav ul li ul {
+    position: absolute;
+    display: none;
+    background-color: #555556;
+    padding: 5px 10px;
+    margin: 0 0 0 -30px;
+    border-radius: 4px;
+    width: 139px;
+}
+
+header nav ul li ul li {
+    display: flex;
+    padding: 4px 4px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+header nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*INDEX*/ 
+.imagenfondo{
+    margin-top: 75px;
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/botinesfondo.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.imagenfondo::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(58, 58, 58,.4);
+    width: 100%;
+    height: 600px;
+}
+.imagenfondo h1{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 40%;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+} 
+
+.title h5{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 25px;
+    padding-top: 40px;
+    font-weight: 700;
+}
+
+#main-index{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.grid-index{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+
+}
+
+/*MAIN*/
+
+main{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 150px;
+    padding-bottom: 10px;
+}
+
+
+.producto{
+    height: 30vw;
+    width: 20vw;
+    border: 1px solid #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    font-weight: 400;
+    background: linear-gradient(180deg, rgba(163, 163, 163, 0.5),rgb(255, 115, 115, 0.5));
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.producto:hover{
+    transform: scale(1.2,1.2);
+}
+.producto-imagen{
+    padding: 10px 0;
+    width: 100%;
+    height: 60%;
+}
+.producto-imagen img{
+    width: 90%;
+    object-fit: cover;
+    aspect-ratio: 4/4;
+}
+
+.producto-texto{
+    font-weight: 400;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.producto-texto h2{
+    font-size: 1.8vw;
+    padding: 0 5px;
+    text-decoration: underline;
+}
+.producto-texto p{
+    text-decoration: line-through;
+}
+.producto-texto h3{
+    font-size: 1.5vw;
+}
+
+.botines{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productos-main{
+    display: flex;
+}
+/*botines*/
+.botines-main {
+
+
+}
+
+/*accesorios*/
+.accesorios{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 130px);
+}
+
+/*indumentaria*/
+.indumentaria{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 130px);
+}
+
+/*nosotros*/
+.nosotros-main{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 130px);
+}
+.nosotros-main-texto h4{
+    padding-top: 90px;
+}
+.nosotros-main-texto p{
+    padding-top: 20px;
+    padding-bottom: 171px;
+}
+
+/*contacto*/
+.contacto-main{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 130px);
+}
+fieldset {
+    display: block;
+    gap: 20px;
+    padding-block-start: 1em;
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    padding-block-end: 1em;
+    min-inline-size: min-content;
+    border-width: 3px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    margin-top: 50px;
+}
+.grupo-1{
+    background-color: #1c1c1c;
+    gap: 20px;
+    display: flex;
+    padding-left: 20px;
+}
+.grupo-1 h2{
+    color: white}
+.red-social{
+    display: flex;
+    font-size: 1.5vw;
+    gap: 20px;
+    background-color: #1c1c1c;
+}
+.red-social a {
+    background-color: #1c1c1c;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.red-social a:hover{
+    background-color: #252525;
+}
+.fa.fa-youtube{
+    color: red;
+}
+
+.fa.fa-facebook{
+    color: blue;
+}
+
+.fa.fa-twitter{
+    color: #00B2FF;
+}
+
+.fa.fa-instagram{
+    color: #D136FF;
+}
+.grupo-2{
+    text-align: center;
+    color:#fff;
+}
+
+
+/*HEADER MOBILE*/
+@media screen and (max-width: 480px){
+    #main-index {
+        margin: 150px 0 50px;
+    }
+    header label{
+        width: 40%;
+        text-align: end;
+        display: block;
+    }
+    header label i{
+        color: white;
+        font-size: 30px;
+    }
+    header nav{
+        transform: translateX(-480px);
+        transition: 1s;
+        position: absolute;
+        display: flex ;
+        flex-direction: column;
+        background-color: #1c1c1c;
+        justify-content: flex-start;
+        left: 0;
+        top: 10vw;
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+    }
+    header nav ul{
+        background-color: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .categorys-li{
+        display: none;
+    }
+    .hidden{
+        display:flex;
+    }
+    .inputMenu:checked + nav {
+        transform: translateX(0);
+    }
+    .mainMenu{
+        display: block;
+    }
+    .mainMenu li a {
+        font-size: 20px;
+    }
+    header div{
+        width: 30px;
+    }
+    }
+
+/*MOBILE*/
+@media(max-width: 480px){
+    .grid-index {
+        grid-template-columns: 1fr;
+    }
+    .main h5{
+        justify-content: center;
+    }
+    .imagenfondo{   
+        margin: 0;
+    }
+    .imagenfondo h1{
+        font-size: 25px;
+        text-align: center;
+        top: 50%;
+    }
+    #main-index{
+        margin: auto;
+        padding-top: 20px;
+    }
+    
+    .producto{
+        height: 60vw;
+        width: 40vw;
+    }
+    .red-social a {
+        font-size: x-large;
+    }
+    .accesorios {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 900px) {
+    .grid-index {
+        grid-template-columns: 1fr;
+    }
+    .main h5{
+        justify-content: center;
+    }
+    .imagenfondo{   
+        margin: 0;
+    }
+    .imagenfondo h1{
+        font-size: 40px;
+        text-align: center;
+        top: 50%;
+    }
+    #main-index{
+        margin: auto;
+        padding-top: 20px;
+    }
+    .producto{
+        height: 50vw;
+        width: 30vw;
+    }
+    .red-social a {
+        font-size: x-large;
+    }
+}
+
+/*HEADER TABLET*/
+@media (min-width: 481px) and (max-width: 900px){
+    header{
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+    header nav ul li{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    header div{
+        min-width: 40px;
+    }
+}
+
+/*Notebook*/
+@media (min-width: 901px) and (max-width: 1023px) {
+
+    .red-social a {
+        font-size: x-large;
+    }
+    header div{
+        min-width: 50px;
+    }
+}
